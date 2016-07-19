@@ -90,7 +90,8 @@ static void main_window_load(Window *window) {
   text_layer_set_background_color(s_date_layer, GColorClear);
   text_layer_set_text_alignment(s_date_layer, GTextAlignmentCenter);
 //  s_date_font = fonts_load_custom_font(resource_get_handle(RESOURCE_ID_FONT_PERFECT_DOS_20));
-  s_date_font = fonts_get_system_font(FONT_KEY_GOTHIC_24);
+  s_date_font = fonts_load_custom_font(
+                          resource_get_handle(RESOURCE_ID_GEOSANS_13));
   text_layer_set_font(s_date_layer, s_date_font);
 
 	
